@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 200px 1fr 200px;
+    min-height: 100vh;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: larger;
+  }
+  header, footer, nav, main, aside{
+    padding: 2rem;
+    border: 2px solid white;
+  }
+  header, footer {
+    grid-column-end: span 3;
+    background: #FFC4DD;
+  }
+  main {
+    grid-column-start: 2;
+    background: #B4E197;
+  }
+  nav {
+    grid-row-start: 2;
+    background: #A1E3D8;
+  }
+  aside {
+    grid-column-start: 3;
+    background: #E8C07D;
+  }
